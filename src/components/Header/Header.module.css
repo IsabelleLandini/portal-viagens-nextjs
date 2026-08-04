@@ -1,6 +1,25 @@
 .header{
-    padding: 20px 40px;
+    padding: 24px 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+.menu a:hover{
+    color: #0070f3;
 }
