@@ -38,6 +38,7 @@ export default async function DestinoDetalhes({ params }: DestinoPageProps) {
 
             <div className={styles.content}>
                 <h1>{destino.nome}</h1>
+                
                 <p>{destino.descricao}</p>
 
                 <Link href="/destinos" className={styles.backLink}>
