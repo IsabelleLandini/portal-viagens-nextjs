@@ -4,14 +4,18 @@ import Link from "next/link";
 export default function Hero() {
     return (
         <section className={styles.hero}>
-            <div className={styles.content}>
-                <h1>Explore novos destinos</h1>
+            <div className={styles.overlay}>
+                <div className={styles.content}>
+                    <h1>Descubra destinos inesquecíveis</h1>
 
-                <p>
-                    Descubra lugares incríveis e planeje sua próxima aventura.
-                </p>
+                    <p>
+                         Inspire-se para sua próxima viagem e conheça lugares incríveis ao redor do mundo.
+                    </p>
 
-                <Link href="/destinos">Conheça destinos</Link>
+                    <Link href="/destinos" className={styles.button}>
+                        Explorar destinos
+                    </Link>
+                </div>
             </div>
         </section>
     );

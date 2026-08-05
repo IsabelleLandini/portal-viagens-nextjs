@@ -1,25 +1,40 @@
 .header{
-    padding: 24px 40px;
+    background: var(--white);
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 10; 
+}
+
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #e5e5e5;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
 }
 
 .menu{
     display: flex;
     list-style: none;
-    gap: 24px;
+    gap: 32px;
     margin: 0;
     padding: 0;
 }
 
 .menu a{
-    text-decoration: none;
-    color: inherit;
+    color: var(--text);
     font-weight: 500;
+    transition: color o.3s ease;
 }
 
 .menu a:hover{
-    color: #0070f3;
+    color: var(--secondary);
 }

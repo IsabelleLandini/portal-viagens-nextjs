@@ -4,19 +4,27 @@ import styles from "./Header.module.css"
 export default function Header(){
     return (
         <header className={styles.header}>
-            <h1>Portal Viagens</h1>
+            <div className={styles.container}>
+                <Link href="/" className={styles.logo}>
+                    Portal Viagens
+                </Link>
 
-            <nav>
-                <ul className={styles.menu}>
-                    <li>
-                        <Link href="/">Home</Link>
-                    </li>
+                 <nav>
+                    <ul className={styles.menu}>
+                        <li>
+                            <Link href="/">
+                                Início    
+                            </Link>
+                        </li>
 
-                    <li>
-                        <Link href="/destinos">Destinos</Link>
-                    </li>
-                </ul>
-            </nav>
+                        <li>
+                            <Link href="/destinos">
+                                Destinos
+                            </Link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
     );
 }

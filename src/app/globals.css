@@ -4,9 +4,23 @@
   box-sizing: border-box;
 }
 
-html,
+:root {
+  --primary: #0f4c5c;
+  --secondary: #2c7a7b;
+  --background: #f8fafc;
+  --text: #1f2937;
+  --white: #ffffff;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.5;
 }
 
 a{
@@ -16,4 +30,9 @@ a{
 
 ul{
   list-style: none;
+}
+
+button{
+  font-family: inherit;
+  cursor: pointer;
 }
