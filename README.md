@@ -6,6 +6,16 @@ Portal de viagens desenvolvido com **Next.js**, **React** e **TypeScript**, simu
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
 ![CSS Modules](https://img.shields.io/badge/CSS-Modules-1572B6?logo=css3)
+![Jest](https://img.shields.io/badge/Jest-C21325?logo=jest&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
+
+---
+
+## Aplicação publicada
+
+Acesse o projeto online:
+
+https://portal-viagens-nextjs.vercel.app/
 
 ---
 
@@ -16,7 +26,7 @@ Portal de viagens desenvolvido com **Next.js**, **React** e **TypeScript**, simu
 | ![](./public/images/preview/home.png) | ![](./public/images/preview/destinos.png) | ![](./public/images/preview/detalhes.png) |
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - Página inicial com apresentação do portal.
 - Hero Section com imagem de destaque e chamada para ação.
@@ -36,7 +46,7 @@ Portal de viagens desenvolvido com **Next.js**, **React** e **TypeScript**, simu
 
 ---
 
-## 🛣️ Rotas da aplicação
+## Rotas da aplicação
 
 | Rota | Descrição |
 |------|-----------|
@@ -46,19 +56,42 @@ Portal de viagens desenvolvido com **Next.js**, **React** e **TypeScript**, simu
 
 ---
 
-## 🚀 Tecnologias
+## Tecnologias
 
-- Next.js 16
+- Next.js 
 - React
 - TypeScript
 - CSS Modules
+- Jest
+- Testing Library
+- GitHub Actions
+- Vercel
 
 ---
 
-## 📂 Estrutura do Projeto
+## CI/CD
+
+O projeto utiliza **GitHub Actions** para automação de CI/CD.
+
+A cada `push` na branch `main`, o pipeline:
+
+1. Instala as dependências com `npm ci`.
+2. Executa o ESLint.
+3. Executa os testes automatizados.
+4. Executa o build da aplicação.
+5. Realiza o deploy automático para a Vercel.
+
+---
+
+## Estrutura do Projeto
 
 ```text
 portal-viagens
+├── .github 
+│      └── workflows 
+│           ├── main.yml 
+│           └── deploy.yml 
+│
 ├── public
 │     └── images
 │          └── preview
@@ -103,7 +136,7 @@ portal-viagens
 
 ---
 
-## 💻 Como executar o projeto
+## Como executar o projeto
 
 Clone o repositório:
 
