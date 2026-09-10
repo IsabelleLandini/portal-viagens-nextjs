@@ -7,7 +7,7 @@ Portal de viagens desenvolvido com **Next.js**, **React** e **TypeScript**, simu
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
 ![CSS Modules](https://img.shields.io/badge/CSS-Modules-1572B6?logo=css3)
 ![Jest](https://img.shields.io/badge/Jest-C21325?logo=jest&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
+[![CI](https://github.com/IsabelleLandini/portal-viagens-nextjs/actions/workflows/main.yml/badge.svg)](https://github.com/IsabelleLandini/portal-viagens-nextjs/actions/workflows/main.yml)
 
 ---
 
@@ -80,6 +80,8 @@ A cada `push` na branch `main`, o pipeline:
 3. Executa os testes automatizados.
 4. Executa o build da aplicação.
 5. Realiza o deploy automático para a Vercel.
+
+Para acompanhar a execução dos workflows, acesse a aba [Actions](https://github.com/IsabelleLandini/portal-viagens-nextjs/actions) do repositório. Abra a execução mais recente dos workflows **CI** e **CD** e confira o status de cada etapa. Um **✓ verde** indica que a etapa foi concluída com sucesso.
 
 ---
 
